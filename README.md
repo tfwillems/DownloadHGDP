@@ -7,6 +7,9 @@ Please not that although the current framework works, care is required to delete
 
 
 ```
+# Populate regions_of_interest.bed with the regions from which you'd like to extract alignments
+# The file should contain three columns: CHROM, START and END, and shouldn't have any header lines
+
 cd by_sample_bams
 ./download_regions
 
