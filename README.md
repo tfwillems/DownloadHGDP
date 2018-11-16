@@ -5,3 +5,21 @@ Thousands of *GRCh38* BAM files for HGDP samples are publicly available on the [
 
 Please not that although the current framework works, care is required to delete and redownloadfiles that failed to appropriately extract alignments
 
+
+```
+cd by_sample_bams
+./download_regions
+
+# Delete files in which some alignments were not properly extracted
+./download_regions.sh
+# Continue these iterations until all files are properly downloaded
+
+cd ../
+
+cd merged_bam
+./merge_bams.sh
+cd ../
+
+# The final merged BAM will be in merged_bam/merged_alns.sorted.bam
+
+```
